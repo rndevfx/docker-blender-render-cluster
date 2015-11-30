@@ -1,5 +1,5 @@
-MAINTAINER d3v0x
 FROM rndevfx/gentoo-stage3-amd64-nomultilib
+MAINTAINER d3v0x
 
 RUN echo "MAKEOPTS=\"-j$(cat /proc/cpuinfo | grep processor | wc -l)\"" >> /etc/portage/make.conf
 RUN emerge-webrsync -v
