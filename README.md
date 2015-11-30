@@ -19,4 +19,4 @@ $ docker build -t blender_slave .
 
 ## How to connect slaves to master
 
-$ docker link blender_master:master blender_slave
+$ docker --link blender_master:master blender_slave
