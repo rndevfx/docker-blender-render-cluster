@@ -16,6 +16,5 @@ RUN echo "media-gfx/blender cycles tiff python_single_target_python3_4" >> /etc/
 RUN emerge media-gfx/blender
 
 ADD scripts /root/
-ENV RENDER_MODE MASTER
 CMD blender -b -P /root/renderServerStartup.py
 EXPOSE 8000

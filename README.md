@@ -1,22 +1,14 @@
 # blender-render-cluster
 A docker based multi machine render setup
 
-## How to build master
+## Build basic blender image
+$ docker build -t blender .
 
-Be sure the environment variable within the Dockerfile is set to MASTER
+## How to start as master
+$ docker run -e "RENDER_MODE=MASTER" -p 8000:8000 -d blender
 
-ENV RENDER_MODE MASTER
+## How to start and run as slave
 
-$ docker build -t blender_master .
+RENDER_MODE will be set to SLAVE by default. You only have to connect/link to the master container.
 
-## How to build slaves
-
-Edit the environment variable within the Dockerfile to SLAVE
-
-ENV RENDER_MODE SLAVE
-
-$ docker build -t blender_slave .
-
-## How to connect slaves to master
-
-$ docker --link blender_master:master blender_slave
+$ docker run --link blender_master:master -d blender
