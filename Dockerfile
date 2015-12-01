@@ -1,4 +1,4 @@
-FROM rndevfx/gentoo-stage3-amd64-nomultilib
+FROM d3v0x/gentoo
 MAINTAINER d3v0x
 
 RUN echo "MAKEOPTS=\"-j$(cat /proc/cpuinfo | grep processor | wc -l)\"" >> /etc/portage/make.conf
