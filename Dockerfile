@@ -14,6 +14,7 @@ RUN layman -f -o https://raw.github.com/hasufell/media-overlay/master/repository
 
 RUN echo "media-gfx/blender cycles tiff python_single_target_python3_4" >> /etc/portage/package.use/blender
 RUN emerge media-gfx/blender
+RUN rm -rf /usr/portage
 
 ADD scripts /root/
 CMD blender -b -P /root/renderServerStartup.py
