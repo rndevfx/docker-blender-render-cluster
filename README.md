@@ -15,19 +15,19 @@ A docker based multi machine render setup
 
 ### How to start as master
 
-    $ docker run -e "RENDER_MODE=MASTER" -p 8000:8000 -d blender-render-cluster
+    $ docker run --name blender_master -e "RENDER_MODE=MASTER" -p 8000:8000 -d blender-render-cluster
 
 ### How to start and run as slave
 
 RENDER_MODE will be set to SLAVE by default. You only have to connect/link to the master container.
 
-    $ docker run --link blender_master:master -d blender-render-cluster
+    $ docker run --name blender_slave --link blender_master:master -d blender-render-cluster
 
 ### Connect new slave to master on other host
 
 To connect to a master on another server/host you only have to override the environment variable MASTER_PORT_8000_TCP_ADDR and enter the master IP address
 
-    $ docker run -d -e "MASTER_PORT_8000_TCP_ADDR=192.168.178.21" blender-render-cluster
+    $ docker run -d -e "MASTER_PORT_8000_TCP_ADDR=192.168.178.21" blender_master
 
 ## Tl;Dr Edition
 
@@ -97,12 +97,12 @@ After the master is up and running we can start to connect some slaves. Log in t
     
 But this time we want a slave which connects to the master. So we have to start the container with masters IP address:
 
-    rin@gentoo-vm ~ $ docker run -d -e "MASTER_PORT_8000_TCP_ADDR=10.0.109.55" d3v0x/blender-render-cluster
+    rin@gentoo-vm ~ $ docker run --name blender_slave -d -e "MASTER_PORT_8000_TCP_ADDR=10.0.109.55" d3v0x/blender-render-cluster
 
 Replace the IP 10.0.109.55 with your masters IP of course. And now you've got your first slave in your list. Check the web interface to get some details.
 If your master and the slave is on the same machine you can link both docker containers together instead of overwriting the IP.
 
-    rin@gentoo-vm ~ $ docker run -d --link blender_master:master d3v0x/blender-render-cluster
+    rin@gentoo-vm ~ $ docker run --name blender_slave -d --link blender_master:master d3v0x/blender-render-cluster
     
 Repeat this for all your other machines.
 
