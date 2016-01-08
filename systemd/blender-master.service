@@ -1,0 +1,12 @@
+[Unit]
+Description=Blender Master Container
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker start -a blender_master
+ExecStop=/usr/bin/docker stop -t 2 blender_master
+
+[Install]
+WantedBy=multi-user.target

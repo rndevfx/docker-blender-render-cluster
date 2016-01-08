@@ -1,0 +1,12 @@
+[Unit]
+Description=Blender Slave Container
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker start -a blender_slave
+ExecStop=/usr/bin/docker stop -t 2 blender_slave
+
+[Install]
+WantedBy=multi-user.target
