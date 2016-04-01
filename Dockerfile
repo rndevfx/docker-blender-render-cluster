@@ -1,7 +1,6 @@
 FROM d3v0x/gentoo
 MAINTAINER d3v0x
 
-RUN echo "MAKEOPTS=\"-j$(cat /proc/cpuinfo | grep processor | wc -l)\"" >> /etc/portage/make.conf
 RUN emerge-webrsync -v
 
 RUN echo -e "media-gfx/blender\n\
