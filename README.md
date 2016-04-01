@@ -1,9 +1,11 @@
 # blender-render-cluster
 A docker based multi machine render setup
 
-![Alt text](readme/images/blenderDocker.png?raw=true "Blender Docker Logo")
+![Build](https://jenkins.nespithal.com/buildStatus/icon?job=docker-blender-render-cluster)
 
 ## Quick Start
+
+![Alt text](readme/images/blenderDocker.png?raw=true "Blender Docker Logo")
 
 ### Option 1 - The easy way: Download basic blender image
 
