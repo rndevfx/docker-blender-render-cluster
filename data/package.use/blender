@@ -1,0 +1,104 @@
+media-gfx/blender cycles tiff python_targets_python3_5
+
+# required by dev-python/cryptography-1.1.2::gentoo
+# required by dev-python/pyopenssl-0.15.1-r1::gentoo
+# required by dev-python/ndg-httpsclient-0.4.0::gentoo
+# required by dev-python/requests-2.8.1::gentoo
+# required by media-gfx/blender-2.77::d3v0x-overlay
+# required by blender (argument)
+>=dev-python/setuptools-18.4 python_targets_python3_5
+# required by dev-python/cryptography-1.1.2::gentoo
+# required by dev-python/pyopenssl-0.15.1-r1::gentoo
+# required by dev-python/ndg-httpsclient-0.4.0::gentoo
+# required by dev-python/requests-2.8.1::gentoo
+# required by media-gfx/blender-2.77::d3v0x-overlay
+# required by blender (argument)
+>=dev-python/idna-2.0 python_targets_python3_5
+# required by dev-python/requests-2.8.1::gentoo
+# required by media-gfx/blender-2.77::d3v0x-overlay
+# required by blender (argument)
+>=dev-python/py-1.4.30 python_targets_python3_5
+# required by dev-python/cryptography-1.1.2::gentoo
+# required by dev-python/pyopenssl-0.15.1-r1::gentoo
+# required by dev-python/ndg-httpsclient-0.4.0::gentoo
+# required by dev-python/requests-2.8.1::gentoo
+# required by media-gfx/blender-2.77::d3v0x-overlay
+# required by blender (argument)
+>=virtual/python-ipaddress-1.0 python_targets_python3_5
+# required by dev-python/setuptools-18.4::gentoo
+# required by dev-python/cryptography-1.1.2::gentoo
+# required by dev-python/pyopenssl-0.15.1-r1::gentoo
+# required by dev-python/ndg-httpsclient-0.4.0::gentoo
+# required by dev-python/requests-2.8.1::gentoo
+# required by media-gfx/blender-2.77::d3v0x-overlay
+# required by blender (argument)
+>=dev-python/packaging-15.3-r2 python_targets_python3_5
+# required by dev-python/cffi-1.5.2::gentoo
+# required by dev-python/cryptography-1.1.2::gentoo[python_targets_python2_7,-python_targets_python3_3,python_targets_python3_4,python_targets_python3_5]
+# required by dev-python/pyopenssl-0.15.1-r1::gentoo
+# required by dev-python/ndg-httpsclient-0.4.0::gentoo
+# required by dev-python/requests-2.8.1::gentoo
+# required by media-gfx/blender-2.77::d3v0x-overlay
+# required by blender (argument)
+>=dev-python/pycparser-2.14 python_targets_python3_5
+# required by media-gfx/blender-2.77::d3v0x-overlay
+# required by blender (argument)
+>=dev-python/numpy-1.10.4 python_targets_python3_5
+# required by dev-python/requests-2.8.1::gentoo
+# required by media-gfx/blender-2.77::d3v0x-overlay
+# required by blender (argument)
+>=dev-python/chardet-2.3.0 python_targets_python3_5
+# required by dev-python/pyopenssl-0.15.1-r1::gentoo
+# required by dev-python/ndg-httpsclient-0.4.0::gentoo
+# required by dev-python/requests-2.8.1::gentoo
+# required by media-gfx/blender-2.77::d3v0x-overlay
+# required by blender (argument)
+>=dev-python/six-1.10.0 python_targets_python3_5
+# required by dev-python/requests-2.8.1::gentoo
+# required by media-gfx/blender-2.77::d3v0x-overlay
+# required by blender (argument)
+>=dev-python/ndg-httpsclient-0.4.0 python_targets_python3_5
+# required by dev-python/pycparser-2.14::gentoo
+# required by dev-python/cffi-1.5.2::gentoo
+# required by dev-python/cryptography-1.1.2::gentoo[python_targets_python2_7,-python_targets_python3_3,python_targets_python3_4,python_targets_python3_5]
+# required by dev-python/pyopenssl-0.15.1-r1::gentoo
+# required by dev-python/ndg-httpsclient-0.4.0::gentoo
+# required by dev-python/requests-2.8.1::gentoo
+# required by media-gfx/blender-2.77::d3v0x-overlay
+# required by blender (argument)
+>=dev-python/ply-3.8 python_targets_python3_5
+# required by dev-python/cryptography-1.1.2::gentoo[python_targets_python2_7,-python_targets_python3_3,python_targets_python3_4,python_targets_python3_5]
+# required by dev-python/pyopenssl-0.15.1-r1::gentoo
+# required by dev-python/ndg-httpsclient-0.4.0::gentoo
+# required by dev-python/requests-2.8.1::gentoo
+# required by media-gfx/blender-2.77::d3v0x-overlay
+# required by blender (argument)
+>=dev-python/cffi-1.5.2 python_targets_python3_5
+# required by media-gfx/blender-2.77::d3v0x-overlay
+# required by blender (argument)
+>=dev-python/requests-2.8.1 python_targets_python3_5
+# required by dev-python/cryptography-1.1.2::gentoo
+# required by dev-python/pyopenssl-0.15.1-r1::gentoo
+# required by dev-python/ndg-httpsclient-0.4.0::gentoo
+# required by dev-python/requests-2.8.1::gentoo
+# required by media-gfx/blender-2.77::d3v0x-overlay
+# required by blender (argument)
+>=dev-python/pyasn1-0.1.9 python_targets_python3_5
+# required by dev-python/setuptools-18.4::gentoo
+# required by dev-python/cryptography-1.1.2::gentoo
+# required by dev-python/pyopenssl-0.15.1-r1::gentoo
+# required by dev-python/ndg-httpsclient-0.4.0::gentoo
+# required by dev-python/requests-2.8.1::gentoo
+# required by media-gfx/blender-2.77::d3v0x-overlay
+# required by blender (argument)
+>=dev-python/certifi-2015.11.20 python_targets_python3_5
+# required by dev-python/requests-2.8.1::gentoo
+# required by media-gfx/blender-2.77::d3v0x-overlay
+# required by blender (argument)
+>=dev-python/pyopenssl-0.15.1-r1 python_targets_python3_5
+# required by dev-python/pyopenssl-0.15.1-r1::gentoo
+# required by dev-python/ndg-httpsclient-0.4.0::gentoo
+# required by dev-python/requests-2.8.1::gentoo
+# required by media-gfx/blender-2.77::d3v0x-overlay
+# required by blender (argument)
+>=dev-python/cryptography-1.1.2 python_targets_python3_5
