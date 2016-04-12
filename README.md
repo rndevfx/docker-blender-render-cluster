@@ -11,9 +11,21 @@ A docker based multi machine render setup
 
     $ docker pull d3v0x/blender-render-cluster
 
+All Blender docker images are tagged since version 2.77a. To get a list of available versions, simply run
+
+    curl https://index.docker.io/v1/repositories/d3v0x/blender-render-cluster/tags
+
+If you want to download a specific version, type
+
+    docker pull d3v0x/blender-render-cluster:2.77a
+
+This will download a 2.77a Blender image.
+
 ### Option 2 - The "hard" way: Build basic blender image
 
     $ docker build -t blender-render-cluster .
+
+This will build the latest Blender version from my [Gentoo d3v0x-overlay](https://github.com/d3v0x/d3v0x-overlay)
 
 ### How to start as master
 
