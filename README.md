@@ -29,13 +29,13 @@ This will build the latest Blender version from my [Gentoo d3v0x-overlay](https:
 
 ### How to start as master
 
-    $ docker run --name blender_master -e "RENDER_MODE=MASTER" -p 8000:8000 -d blender-render-cluster
+    $ docker run --name blender_master -e "RENDER_MODE=MASTER" -p 8000:8000 -d d3v0x/blender-render-cluster
 
 ### How to start and run as slave
 
 RENDER_MODE will be set to SLAVE by default. You only have to connect/link to the master container.
 
-    $ docker run --name blender_slave --link blender_master:master -d blender-render-cluster
+    $ docker run --name blender_slave --link blender_master:master -d d3v0x/blender-render-cluster
 
 ### Connect new slave to master on other host
 
