@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 PACKAGE="blender-render-cluster"
 
 docker build --no-cache -t d3v0x/${PACKAGE} .
