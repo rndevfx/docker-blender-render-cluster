@@ -1,31 +1,5 @@
 media-gfx/blender
 
-# required by media-libs/openexr-2.2.0-r2::gentoo
-# required by media-gfx/blender-2.78a-r1::gentoo[openexr]
-# required by blender (argument)
-=sys-devel/autoconf-archive-2017.09.28 ~amd64
-# required by media-gfx/blender-2.78a-r1::gentoo[openexr]
-# required by blender (argument)
-=media-libs/openexr-2.2.0-r2 ~amd64
-# required by dev-python/setuptools-36.5.0::gentoo[python_targets_python3_5]
-# required by dev-python/numpy-1.13.3::gentoo
-# required by media-gfx/blender-2.78a-r1::gentoo
-# required by blender (argument)
-=dev-lang/python-3.5.4 ~amd64
-# required by media-gfx/blender-2.78a-r1::gentoo
-# required by blender (argument)
-=dev-python/numpy-1.13.3 ~amd64
-# required by dev-python/setuptools-36.5.0::gentoo
-# required by dev-python/numpy-1.13.3::gentoo
-# required by media-gfx/blender-2.78a-r1::gentoo
-# required by blender (argument)
-=dev-python/certifi-2017.7.27.1 ~amd64
-# required by media-gfx/blender-2.78a-r1::gentoo
-# required by blender (argument)
-=dev-python/requests-2.18.4 ~amd64
-# required by dev-python/certifi-2017.7.27.1::gentoo
-=dev-python/setuptools-36.5.0 ~amd64
-# required by media-libs/openexr-2.2.0-r2::gentoo
-# required by media-gfx/blender-2.78a-r1::gentoo[openexr]
-# required by blender (argument)
-=media-libs/ilmbase-2.2.0-r1 ~amd64
+# required by media-gfx/blender-2.79-r1::gentoo[openimageio]
+# required by media-gfx/blender (argument)
+=media-libs/openimageio-1.8.7 ~amd64
