@@ -1,4 +1,4 @@
-FROM d3v0x/gentoo
+FROM gentoo/stage3-amd64
 MAINTAINER d3v0x
 
 RUN emerge-webrsync -v
