@@ -2,8 +2,6 @@ FROM gentoo/stage3-amd64
 MAINTAINER d3v0x
 
 RUN emerge-webrsync -v
-
-RUN echo "USE=\"\${USE} -bindist\"" >> /etc/portage/make.conf
 RUN emerge -DN @world
 
 RUN rm -f /etc/portage/package.accept_keywords; \
