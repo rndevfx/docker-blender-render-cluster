@@ -35,7 +35,7 @@ This will build the latest Blender version from my [Gentoo d3v0x-overlay](https:
 
 RENDER_MODE will be set to SLAVE by default. You only have to connect/link to the master container.
 
-    $ docker run --name blender_slave --link blender_master:master -d d3v0x/blender-render-cluster
+    $ docker run --name blender_slave --link blender_master:master -e "MASTER_PORT_8000_TCP_ADDR=master" -d d3v0x/blender-render-cluster
 
 ### Connect new slave to master on other host
 
@@ -116,7 +116,7 @@ But this time we want a slave which connects to the master. So we have to start 
 Replace the IP 10.0.109.55 with your masters IP of course. And now you've got your first slave in your list. Check the web interface to get some details.
 If your master and the slave is on the same machine you can link both docker containers together instead of overwriting the IP.
 
-    rin@gentoo-vm ~ $ docker run --name blender_slave -d --link blender_master:master d3v0x/blender-render-cluster
+    rin@gentoo-vm ~ $ docker run --name blender_slave -d --link blender_master:master -e "MASTER_PORT_8000_TCP_ADDR=master" d3v0x/blender-render-cluster
     
 Repeat this for all your other machines.
 
