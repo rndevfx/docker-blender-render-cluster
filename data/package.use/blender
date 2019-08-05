@@ -87,3 +87,9 @@ media-gfx/blender python_targets_python3_5 headless cycles openimageio tiff
 # required by media-gfx/blender-2.78a-r1::gentoo
 # required by blender (argument)
 >=dev-python/setuptools-36.5.0 python_targets_python3_5
+# required by dev-python/cryptography-2.6.1::gentoo
+# required by dev-python/urllib3-1.24.2::gentoo
+# required by dev-python/requests-2.21.0-r1::gentoo
+# required by media-gfx/blender-2.79b-r1::gentoo
+# required by media-gfx/blender (argument)
+>=virtual/python-enum34-2 python_targets_python3_5
