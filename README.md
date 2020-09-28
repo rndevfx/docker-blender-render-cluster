@@ -3,6 +3,8 @@ A docker based multi machine render setup
 
 ![Build](https://jenkins.nespithal.com/buildStatus/icon?job=docker-blender-render-cluster)
 
+## Warning: This is only possible in Blender < 2.80. For newer Blender releases this plugin is no longer available so this project is deprecated as well.
+
 ## Quick Start
 
 ![Alt text](readme/images/blenderDocker.png?raw=true "Blender Docker Logo")
